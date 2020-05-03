@@ -1,0 +1,7 @@
+com\qa\glassdoor\pages\SigninPage.class
+com\qa\resources\ExtentManager.class
+com\qa\glassdoor\pages\GDLandingPage.class
+com\qa\configuration\page\TestBaseClass.class
+com\qa\resources\ScreenShotUtility.class
+com\qa\configuration\page\DataFiles.class
+com\qa\glassdoor\pages\ReviewPage_GD.class
