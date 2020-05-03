@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun May 03 10:16:35 EDT 2020</td>
+<td>Started on:</td><td>Sun May 03 10:54:21 EDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>45 seconds (45919 ms)</td>
+<tr><td>Total time:</td><td>38 seconds (38436 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.qa.test.glassDoorTestCase.tc01_Rating_3_Star_Reviews_List_And_Send_Results_Via_Email()'><b>tc01_Rating_3_Star_Reviews_List_And_Send_Results_Via_Email</b><br>Test class: com.qa.test.glassDoorTestCase</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=81.0.4044.129)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-54TF6OU&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\csvar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 51934ff087628cd216cff8aeda82ca41
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\csvar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fa0312b4b53d5860c68d8ef2e6de66c2
 *** Element info: {Using=xpath, value=//*[contains(@class,&apos;gdStars&apos;)]/span/span}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -97,17 +98,18 @@ Session ID: 51934ff087628cd216cff8aeda82ca41
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:85)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
 	at com.sun.proxy.$Proxy7.iterator(Unknown Source)
-	at com.qa.glassdoor.pages.ReviewPage_GD.get_user_Defined_Rating_Properties(ReviewPage_GD.java:68)
+	at com.qa.glassdoor.pages.ReviewPage_GD.get_user_Defined_Rating_Properties(ReviewPage_GD.java:69)
 	at com.qa.test.glassDoorTestCase.tc01_Rating_3_Star_Reviews_List_And_Send_Results_Via_Email(glassDoorTestCase.java:43)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1088239991", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1088239991'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace61304908", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace61304908'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=81.0.4044.129)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-54TF6OU&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\csvar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 51934ff087628cd216cff8aeda82ca41
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\csvar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fa0312b4b53d5860c68d8ef2e6de66c2
 *** Element info: {Using=xpath, value=//*[contains(@class,&apos;gdStars&apos;)]/span/span}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -126,7 +128,7 @@ Session ID: 51934ff087628cd216cff8aeda82ca41
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:85)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
 	at com.sun.proxy.$Proxy7.iterator(Unknown Source)
-	at com.qa.glassdoor.pages.ReviewPage_GD.get_user_Defined_Rating_Properties(ReviewPage_GD.java:68)
+	at com.qa.glassdoor.pages.ReviewPage_GD.get_user_Defined_Rating_Properties(ReviewPage_GD.java:69)
 	at com.qa.test.glassDoorTestCase.tc01_Rating_3_Star_Reviews_List_And_Send_Results_Via_Email(glassDoorTestCase.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -161,17 +163,18 @@ Session ID: 51934ff087628cd216cff8aeda82ca41
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>37</td>
-<td>com.qa.test.glassDoorTestCase@646007f4</td></tr>
+<td>38</td>
+<td>com.qa.test.glassDoorTestCase@481a15ff</td></tr>
 <tr>
 <td title='com.qa.test.glassDoorTestCase.tc01_Rating_3_Star_Reviews_List_And_Send_Results_Via_Email()'><b>tc01_Rating_3_Star_Reviews_List_And_Send_Results_Via_Email</b><br>Test class: com.qa.test.glassDoorTestCase</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=81.0.4044.129)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-54TF6OU&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\csvar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 51934ff087628cd216cff8aeda82ca41
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\csvar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fa0312b4b53d5860c68d8ef2e6de66c2
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -183,14 +186,15 @@ Session ID: 51934ff087628cd216cff8aeda82ca41
 	at com.qa.resources.ScreenShotUtility.captureScreenshot(ScreenShotUtility.java:17)
 	at com.qa.utility.CustomListeners.onTestFailure(CustomListeners.java:42)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1264941544", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1264941544'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace170106909", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace170106909'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=81.0.4044.129)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-54TF6OU&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\csvar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 51934ff087628cd216cff8aeda82ca41
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\csvar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fa0312b4b53d5860c68d8ef2e6de66c2
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -235,8 +239,8 @@ Session ID: 51934ff087628cd216cff8aeda82ca41
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>41</td>
-<td>com.qa.test.glassDoorTestCase@646007f4</td></tr>
+<td>38</td>
+<td>com.qa.test.glassDoorTestCase@481a15ff</td></tr>
 </table><p>
 </body>
 </html>

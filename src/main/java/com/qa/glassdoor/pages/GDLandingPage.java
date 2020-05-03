@@ -41,14 +41,13 @@ public final class GDLandingPage extends TestBaseClass{
 	}
 	
 	public void click_On_Company_Reviews() {
+		wait_For_An_Element_To_Be_Visible(companyReviewsLink, 10);
 		click_On_Element(companyReviewsLink);
 	}
 	
 	public String companyName_Displayed()
 	{
-		wait_For_An_Element_To_Be_Visible(companyName, 5);
+		wait_For_An_Element_To_Be_Visible(companyName, 10);
 		return get_Text_From_An_Element(companyName);
 	}
-	
-
 }

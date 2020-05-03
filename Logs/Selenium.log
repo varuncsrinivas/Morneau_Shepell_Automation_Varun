@@ -1,16 +1,13 @@
-10:16:35,621  INFO QaLOG:27 - ------------------------------------------------------------------------------------------------
-10:16:35,624  INFO QaLOG:28 - TEST:: Test Suite Begin :::: Time ::1016
-10:16:35,625  INFO QaLOG:29 - ------------------------------------------------------------------------------------------------
-10:16:35,651  INFO QaLOG:68 - **********************************************************************************************
-10:16:35,651  INFO QaLOG:69 - Test case started : TC01_RATING_3_STAR_REVIEWS_LIST_AND_SEND_RESULTS_VIA_EMAIL
-10:16:35,651  INFO QaLOG:70 - **********************************************************************************************
-10:16:35,655  INFO QaLOG:65 - Executing Test in Chrome Browser
-10:16:36,064 DEBUG Preferences:118 - Preference chrome=81 (valid until 2020-05-03 23:00:39)
-10:16:36,064 DEBUG Preferences:118 - Preference chrome81=81.0.4044.69 (valid until 2020-05-03 23:00:39)
-10:16:36,065  INFO WebDriverManager:615 - Using chromedriver 81.0.4044.69 (since Google Chrome 81 is installed in your machine)
-10:16:36,076 DEBUG WebDriverManager:564 - Driver chromedriver 81.0.4044.69 found in cache
-10:16:36,077  INFO WebDriverManager:1113 - Exporting webdriver.chrome.driver as C:\Users\csvar\.m2\repository\webdriver\chromedriver\win32\81.0.4044.69\chromedriver.exe
-10:16:41,520  INFO QaLOG:83 - Entered the url: https://www.glassdoor.ca
-10:17:21,580  INFO QaLOG:20 - -----------------------------------------------------------------------------------------------
-10:17:21,580  INFO QaLOG:21 - TEST::Test Suite End :::: Time ::1017
-10:17:21,580  INFO QaLOG:22 - -----------------------------------------------------------------------------------------------
+10:55:07,015  INFO QaLOG:27 - ------------------------------------------------------------------------------------------------
+10:55:07,031  INFO QaLOG:28 - TEST:: Test Suite Begin :::: Time ::1055
+10:55:07,031  INFO QaLOG:29 - ------------------------------------------------------------------------------------------------
+10:55:07,062  INFO QaLOG:68 - **********************************************************************************************
+10:55:07,062  INFO QaLOG:69 - Test case started : TC01_RATING_3_STAR_REVIEWS_LIST_AND_SEND_RESULTS_VIA_EMAIL
+10:55:07,062  INFO QaLOG:70 - **********************************************************************************************
+10:55:07,062  INFO QaLOG:65 - Executing Test in Chrome Browser
+10:55:07,479 DEBUG Preferences:118 - Preference chrome=81 (valid until 2020-05-03 23:00:39)
+10:55:07,479 DEBUG Preferences:118 - Preference chrome81=81.0.4044.69 (valid until 2020-05-03 23:00:39)
+10:55:07,479  INFO WebDriverManager:615 - Using chromedriver 81.0.4044.69 (since Google Chrome 81 is installed in your machine)
+10:55:07,495 DEBUG WebDriverManager:564 - Driver chromedriver 81.0.4044.69 found in cache
+10:55:07,501  INFO WebDriverManager:1113 - Exporting webdriver.chrome.driver as C:\Users\csvar\.m2\repository\webdriver\chromedriver\win32\81.0.4044.69\chromedriver.exe
+10:55:13,020  INFO QaLOG:83 - Entered the url: https://www.glassdoor.ca

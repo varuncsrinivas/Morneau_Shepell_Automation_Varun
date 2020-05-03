@@ -52,12 +52,14 @@ public final class ReviewPage_GD extends TestBaseClass{
 	
 
 	public void click_On_ReviewsLink(){
+		wait_For_An_Element_To_Be_Visible(reviewsLink, 10);
 		click_On_Element(reviewsLink);
 	}	
 
 	public void filter_Rating_By_UserDefined(String rating) throws InterruptedException {
-		wait_For_An_Element_To_Be_Visible(filterRating, 5);
+		wait_For_An_Element_To_Be_Visible(filterRating, 10);
 		select_Element_By_Visible_Text(filterRating, rating);
+		//sleep(2000);
 	}
 
 	public String get_user_Defined_Rating_Properties(String expRating, String ratingBreakPoint) throws InterruptedException, IOException {
