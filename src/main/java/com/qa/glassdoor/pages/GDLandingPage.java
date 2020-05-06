@@ -47,6 +47,7 @@ public final class GDLandingPage extends TestBaseClass{
 	
 	public String companyName_Displayed()
 	{
+		sleep(1000);
 		wait_For_An_Element_To_Be_Visible(companyName, 10);
 		return get_Text_From_An_Element(companyName);
 	}

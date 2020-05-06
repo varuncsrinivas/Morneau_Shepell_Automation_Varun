@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -59,18 +60,26 @@ public final class ReviewPage_GD extends TestBaseClass{
 	public void filter_Rating_By_UserDefined(String rating) throws InterruptedException {
 		wait_For_An_Element_To_Be_Visible(filterRating, 10);
 		select_Element_By_Visible_Text(filterRating, rating);
-		//sleep(2000);
+		sleep(2000);
 	}
 
 	public String get_user_Defined_Rating_Properties(String expRating, String ratingBreakPoint) throws InterruptedException, IOException {
 		int count = 0;
 		while(true)
 		{
+			try {
+				sleep(1000);
+				wait_For_An_Element_To_Be_Visible(ListFirstRes, 5);
+			}
+			catch(StaleElementReferenceException e) {
+				e.printStackTrace();
+				sleep(2000);
+				//wait_For_An_Element_To_Be_Visible(ListFirstRes, 10);
+			}
 			wait_For_An_Element_To_Be_Visible(ListFirstRes, 5);
 			for (WebElement webElement : reviewsList) {
 				String ratingNumber= webElement.getAttribute("title");
 				ratingText = ratingNumber;
-
 				if(ratingNumber.equals(expRating))
 				{
 					List<WebElement> StarRev= driver.findElements(By.xpath("(//*[contains(@class,'gdStars')]/span/span[@title='"+expRating+"'])"));
@@ -121,7 +130,6 @@ public final class ReviewPage_GD extends TestBaseClass{
 					break;
 				}
 			}
-
 			if(ratingText.equals(ratingBreakPoint)) {
 				break;
 			}

@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -32,8 +33,7 @@ public class TestBaseClass
 	public static Properties properties;
 	public static FileInputStream fis;
 	protected static WebDriver driver;
-	//public long implicitwait=1;
-	public long PageLoadTime=60;
+	public long PageLoadTime=20;
 	public ExtentReports rep = ExtentManager.getInstance();
 	public static ExtentTest test;
 	public static Logger log = Logger.getLogger("QaLOG");
@@ -76,7 +76,6 @@ public class TestBaseClass
 			driver= new ChromeDriver(options);
 		}
 		driver.manage().deleteAllCookies();
-		//driver.manage().timeouts().implicitlyWait(implicitwait, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(PageLoadTime, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(properties.getProperty("url"));
@@ -115,11 +114,12 @@ public class TestBaseClass
 
 	public void wait_For_An_Element_To_Be_Visible(WebElement element, int seconds)
 	{
+		WebDriverWait wait= new WebDriverWait(driver, seconds);
 		try {
-			WebDriverWait wait= new WebDriverWait(driver, seconds);
 			wait.until(ExpectedConditions.visibilityOf(element));
 		}
 		catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(element));
 		}
 	}
 
@@ -149,8 +149,15 @@ public class TestBaseClass
 
 	public void select_Element_By_Visible_Text(WebElement element,String string)
 	{
-		Select selectsize = new Select(element);
-		selectsize.selectByVisibleText(string);
+		try {
+			Select selectsize = new Select(element);
+			selectsize.selectByVisibleText(string);
+		}
+		catch (StaleElementReferenceException e) {
+			Select selectsize = new Select(element);
+			selectsize.selectByVisibleText(string);
+		}
+		
 	}
 
 	public boolean isElementDisplayed(WebElement element) {

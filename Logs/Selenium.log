@@ -1,13 +1,24 @@
-10:55:07,015  INFO QaLOG:27 - ------------------------------------------------------------------------------------------------
-10:55:07,031  INFO QaLOG:28 - TEST:: Test Suite Begin :::: Time ::1055
-10:55:07,031  INFO QaLOG:29 - ------------------------------------------------------------------------------------------------
-10:55:07,062  INFO QaLOG:68 - **********************************************************************************************
-10:55:07,062  INFO QaLOG:69 - Test case started : TC01_RATING_3_STAR_REVIEWS_LIST_AND_SEND_RESULTS_VIA_EMAIL
-10:55:07,062  INFO QaLOG:70 - **********************************************************************************************
-10:55:07,062  INFO QaLOG:65 - Executing Test in Chrome Browser
-10:55:07,479 DEBUG Preferences:118 - Preference chrome=81 (valid until 2020-05-03 23:00:39)
-10:55:07,479 DEBUG Preferences:118 - Preference chrome81=81.0.4044.69 (valid until 2020-05-03 23:00:39)
-10:55:07,479  INFO WebDriverManager:615 - Using chromedriver 81.0.4044.69 (since Google Chrome 81 is installed in your machine)
-10:55:07,495 DEBUG WebDriverManager:564 - Driver chromedriver 81.0.4044.69 found in cache
-10:55:07,501  INFO WebDriverManager:1113 - Exporting webdriver.chrome.driver as C:\Users\csvar\.m2\repository\webdriver\chromedriver\win32\81.0.4044.69\chromedriver.exe
-10:55:13,020  INFO QaLOG:83 - Entered the url: https://www.glassdoor.ca
+15:03:30,909  INFO QaLOG:27 - ------------------------------------------------------------------------------------------------
+15:03:30,909  INFO QaLOG:28 - TEST:: Test Suite Begin :::: Time ::153
+15:03:30,909  INFO QaLOG:29 - ------------------------------------------------------------------------------------------------
+15:03:30,939  INFO QaLOG:68 - **********************************************************************************************
+15:03:30,939  INFO QaLOG:69 - Test case started : TC01_RATING_3_STAR_REVIEWS_LIST_AND_SEND_RESULTS_VIA_EMAIL
+15:03:30,939  INFO QaLOG:70 - **********************************************************************************************
+15:03:30,950  INFO QaLOG:65 - Executing Test in Chrome Browser
+15:03:31,422 DEBUG Preferences:118 - Preference chrome=81 (valid until 2020-05-06 18:53:40)
+15:03:31,422 DEBUG Preferences:118 - Preference chrome81=81.0.4044.69 (valid until 2020-05-06 18:53:40)
+15:03:31,422  INFO WebDriverManager:615 - Using chromedriver 81.0.4044.69 (since Google Chrome 81 is installed in your machine)
+15:03:31,442 DEBUG WebDriverManager:564 - Driver chromedriver 81.0.4044.69 found in cache
+15:03:31,442  INFO WebDriverManager:1113 - Exporting webdriver.chrome.driver as C:\Users\csvar\.m2\repository\webdriver\chromedriver\win32\81.0.4044.69\chromedriver.exe
+15:03:37,248  INFO QaLOG:82 - Entered the url: https://www.glassdoor.ca
+15:05:57,927  INFO QaLOG:75 - **********************************************************************************************
+15:05:57,928  INFO QaLOG:76 - passTC01_RATING_3_STAR_REVIEWS_LIST_AND_SEND_RESULTS_VIA_EMAIL : PASS
+15:05:57,928  INFO QaLOG:77 - **********************************************************************************************
+15:05:57,941 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_CA", UTF-8, parsed); will try to load it.
+15:05:57,941 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_CA.ftl"): Not found
+15:05:57,951 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+15:05:57,951 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+15:05:57,952 DEBUG cache:45 - Loading template for "Extent.ftl"("en_CA", UTF-8, parsed) from "jar:file:/C:/Users/csvar/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+15:05:59,056  INFO QaLOG:20 - -----------------------------------------------------------------------------------------------
+15:05:59,057  INFO QaLOG:21 - TEST::Test Suite End :::: Time ::155
+15:05:59,057  INFO QaLOG:22 - -----------------------------------------------------------------------------------------------
